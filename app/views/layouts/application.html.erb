@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AmyDeyPhotography</title>
+    <title>Amy Dey Photography</title>
     <%= csrf_meta_tags %>
-
+	<link rel="shortcut icon" type="image/x-icon" href="http://i.imgur.com/nLJvnz4.png">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  	<header class='page-header'>
+  		<a href="/">
+  			<%= image_tag("amylogowhite.png", :alt => 'Amy Dey Photography Logo', :class => 'header-logo') %>
+  		</a>
+  		<nav class="header-nav">
+  			<ul>
+  				<li>
+  					<span class="active-link">[</span>
+  					<%= link_to "HOME", "/" %>
+  					<span class="active-link">]</span>
+  				</li>
+  				<li>
+  					<%= link_to "PORTFOLIO" %>
+  				</li>
+  				<li><%= link_to "SERVICES" %></li>
+  				<li><%= link_to "CONTACT" %></li>
+  				<li><%= link_to "ABOUT AMY" %></li>
+  			</ul>
+  		</nav>
+  	</header>
+
     <%= yield %>
   </body>
 </html>
