@@ -18,7 +18,7 @@ body{
 	margin: 0;
 }
 
-.page-header{
+.page-header, .page-footer{
 	background: black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -53,6 +53,9 @@ body{
 			text-decoration: none;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 20px;
+			&:hover{
+				color: #d3d3d3;
+			}
 		}
 	}
 }

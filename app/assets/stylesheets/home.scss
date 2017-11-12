@@ -1,3 +1,80 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+/*    background: transparent url(../images/pattern.png) repeat top left;*/
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li div h3 {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(https://scontent.fatl1-1.fna.fbcdn.net/v/t31.0-8/23467013_1795703953805454_3935495998034153506_o.jpg?oh=1bcfa631fe24cc568dd0eddb1fe2316b&oe=5A9B9FF7)
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(https://scontent.fatl1-1.fna.fbcdn.net/v/t31.0-8/23456559_1795654223810427_4713685760894673775_o.jpg?oh=1f5fda29eddc34df619656dff1d59c3f&oe=5A624285);
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(https://scontent.fatl1-1.fna.fbcdn.net/v/t31.0-8/22291284_1755926621116521_6489905366636855611_o.jpg?oh=83cbd634a1e6958f6e201d49e972066c&oe=5A63FFF8);
+    animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
