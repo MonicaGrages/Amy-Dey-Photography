@@ -16,9 +16,16 @@
 
 body{
 	margin: 0;
+	height: 100vh;
 }
 
+/*.header-logo-container{
+	align-self: flex-end;
+}*/
+
 .page-header, .page-footer{
+	height: 100px;
+/*	position: static;*/
 	background: black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -29,10 +36,10 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	.header-logo{
-		width: 40vw;
+		width: 20vw;
 	}
 	.header-nav{
-		width: 45vw;
+		width: 35vw;
 		ul{
 			display: flex;
 			justify-content: space-around;
@@ -58,4 +65,9 @@ body{
 			}
 		}
 	}
+}
+
+.page-fotter{
+	bottom: 0;
+	position: fixed;
 }
