@@ -16,7 +16,7 @@
 
 body{
 	margin: 0;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 
 /*.header-logo-container{
@@ -67,7 +67,11 @@ body{
 	}
 }
 
-.page-fotter{
+.page-footer{
 	bottom: 0;
 	position: fixed;
+	width: 100%;
 }
+
+
+
