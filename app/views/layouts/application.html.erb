@@ -3,10 +3,11 @@
   <head>
     <title>Amy Dey Photography</title>
     <%= csrf_meta_tags %>
-	<link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/2Xkounu.png?1">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	  <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/2Xkounu.png?1">
+	  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://use.fontawesome.com/1b2ddca422.js"></script>
   </head>
 
   <body>
@@ -18,14 +19,14 @@
   			<ul>
   				<li>
   					<span class="active-link">[</span>
-  					<%= link_to "HOME", "/" %>
+  					<%= link_to "HOME", '/' %>
   					<span class="active-link">]</span>
   				</li>
   				<li>
-  					<%= link_to "PORTFOLIO" %>
+  					<%= link_to "PORTFOLIO", '/portfolio' %>
   				</li>
-  				<li><%= link_to "CONTACT" %></li>
-  				<li><%= link_to "ABOUT AMY" %></li>
+  				<li><%= link_to "CONTACT", '/contact' %></li>
+  				<li><%= link_to "ABOUT AMY", '/about' %></li>
   			</ul>
   		</nav>
   	</header>
@@ -36,22 +37,22 @@
 	    <ul>
 	      <li>
 	        <a class="white-text social-links" href="https://www.facebook.com/eatrightATL">
-	          <i class="fa fa-facebook-square fa-2x hoverable" aria-hidden="true"></i> Facebook
+	          <i class="fa fa-facebook-square fa-2x hoverable" aria-hidden="true"></i>
 	        </a>
 	      </li>
 	      <li>
 	        <a class="white-text social-links" href="https://www.linkedin.com/groups/3785630">
-	          <i class="fa fa-linkedin-square fa-2x hoverable" aria-hidden="true"></i> LinkedIn
+	          <i class="fa fa-linkedin-square fa-2x hoverable" aria-hidden="true"></i>
 	        </a>
 	      </li>
 	      <li>
 	        <a class="white-text social-links" href="https://twitter.com/EatRightATL">
-	          <i class="fa fa-twitter-square fa-2x hoverable" aria-hidden="true"></i> Twitter
+	          <i class="fa fa-twitter-square fa-2x hoverable" aria-hidden="true"></i>
 	        </a>
 	      </li>
 	      <li>
 	        <a class="white-text social-links" href="mailto:gadainfo@eatrightatlanta.org">
-	          <i class="fa fa-envelope-square fa-2x hoverable" aria-hidden="true"></i> Email
+	          <i class="fa fa-envelope-square fa-2x hoverable" aria-hidden="true"></i>
 	        </a>
 	      </li>
 	    </ul>

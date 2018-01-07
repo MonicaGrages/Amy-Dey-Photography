@@ -16,16 +16,10 @@
 
 body{
 	margin: 0;
-	/*height: 100vh;*/
 }
-
-/*.header-logo-container{
-	align-self: flex-end;
-}*/
 
 .page-header, .page-footer{
 	height: 100px;
-/*	position: static;*/
 	background: black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -71,6 +65,16 @@ body{
 	bottom: 0;
 	position: fixed;
 	width: 100%;
+	.white-text{
+		color: white;
+	}
+	ul{
+		display: flex;
+		li{
+			list-style-type: none;
+			margin: 10px;
+		}
+	}
 }
 
 

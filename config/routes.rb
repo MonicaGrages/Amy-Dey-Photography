@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
+  get '/portfolio', to: 'photos#index'
+  get '/contact', to: 'contact#index'
+  get '/about', to: 'about#index'
+
 end
