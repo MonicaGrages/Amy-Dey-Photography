@@ -1,3 +1,15 @@
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about-background{
+	background-image: url(https://i.imgur.com/llsoACc.jpg?1);
+	.background-overlay{
+		background-color: RGBA(10, 10, 10, .6);
+	}
+}
+
+.about-content{
+	font-size: 25px;
+}
+
