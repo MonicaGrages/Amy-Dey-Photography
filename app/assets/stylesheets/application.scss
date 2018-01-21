@@ -67,6 +67,9 @@ body{
 	width: 100%;
 	.white-text{
 		color: white;
+		&:hover{
+			color: #d3d3d3;
+		}
 	}
 	ul{
 		display: flex;
