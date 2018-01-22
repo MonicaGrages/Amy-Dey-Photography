@@ -1,5 +1,5 @@
 <div class="gallery-main">
 	<% @gallery_images.each do |photo|%>
-		<%= image_tag %>
+		<%= image_tag photo.imgur_url, class: 'gallery-photo' %>
 	<% end %>
 </div>
