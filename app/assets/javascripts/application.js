@@ -13,3 +13,18 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+
+$('document').ready(function(){
+  $pageFooter = $('.page-footer');
+  if(window.location.pathname == '/portfolio') {
+    if($pageFooter.hasClass('position-fixed')) {
+      $pageFooter.removeClass('position-fixed');
+    }
+  } else {
+    if(!$pageFooter.hasClass('position-fixed')) {
+      $pageFooter.addClass('position-fixed');
+    }
+  }
+});

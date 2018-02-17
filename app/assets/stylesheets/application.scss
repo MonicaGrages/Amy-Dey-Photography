@@ -63,7 +63,6 @@ body{
 
 .page-footer{
 	bottom: 0;
-	position: fixed;
 	width: 100%;
 	.white-text{
 		color: white;
@@ -78,6 +77,10 @@ body{
 			margin: 10px;
 		}
 	}
+}
+
+.position-fixed {
+	position: fixed;
 }
 
 

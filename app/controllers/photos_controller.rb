@@ -1,7 +1,6 @@
 class PhotosController < ApplicationController
 	def index
-		@gallery_images = Photo.all
-		# will break up by type here if requested
+		@gallery_images = Photo.all.order(:id)
 	end
 
 	def new
