@@ -1,5 +1,5 @@
 <div class="gallery-main">
-	<% @gallery_images.each_slice(8) do |photos|%>
+	<% @gallery_images.each_slice(12) do |photos|%>
     <div class='gallery-row'>
       <div class='landscape gallery-photo' style="background-image: url(<%= photos[0].imgur_url %>)"></div>
       <div class='landscape gallery-photo' style="background-image: url(<%= photos[1].imgur_url %>)"></div>
@@ -13,10 +13,10 @@
       <div class='landscape gallery-photo' style="background-image: url(<%= photos[6].imgur_url %>)"></div>
     </div>
     <div class='gallery-row'>
-      <div class='portrait gallery-photo' style="background-image: url(<%= photos[2].imgur_url %>)"></div>
-      <div class='portrait gallery-photo' style="background-image: url(<%= photos[3].imgur_url %>)"></div>
-      <div class='landscape gallery-photo' style="background-image: url(<%= photos[0].imgur_url %>)"></div>
-      <div class='landscape gallery-photo' style="background-image: url(<%= photos[1].imgur_url %>)"></div>
+      <div class='portrait gallery-photo' style="background-image: url(<%= photos[8].imgur_url %>)"></div>
+      <div class='portrait gallery-photo' style="background-image: url(<%= photos[9].imgur_url %>)"></div>
+      <div class='landscape gallery-photo' style="background-image: url(<%= photos[10].imgur_url %>)"></div>
+      <div class='landscape gallery-photo' style="background-image: url(<%= photos[11].imgur_url %>)"></div>
     </div>
 	<% end %>
 </div>
