@@ -31,9 +31,9 @@
     $pageFooter = $('.page-footer');
     if(window.location.pathname == '/portfolio') {
       if($pageFooter.hasClass('position-fixed')) {
-        console.log('removing positition fixed class');
         $pageFooter.removeClass('position-fixed');
       }
     }
+    $('#portfolio-nav-link').children('span').addClass('active-link').removeClass('inactive-link');
   });
 </script>

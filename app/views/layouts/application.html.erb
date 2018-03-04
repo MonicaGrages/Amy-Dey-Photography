@@ -17,16 +17,26 @@
   		</a>
   		<nav class="header-nav">
   			<ul>
-  				<li>
-  					<span class="active-link">[</span>
+  				<li id="home-nav-link">
+  					<span class="inactive-link">[</span>
   					<%= link_to "HOME", '/' %>
-  					<span class="active-link">]</span>
+  					<span class="inactive-link">]</span>
   				</li>
-  				<li>
+  				<li id="portfolio-nav-link">
+            <span class="inactive-link">[</span>
   					<%= link_to "PORTFOLIO", '/portfolio' %>
+            <span class="inactive-link">]</span>
   				</li>
-  				<li><%= link_to "CONTACT", '/contact' %></li>
-  				<li><%= link_to "ABOUT AMY", '/about' %></li>
+  				<li id="contact-nav-link">
+            <span class="inactive-link">[</span>
+            <%= link_to "CONTACT", '/contact' %>
+            <span class="inactive-link">]</span>
+          </li>
+  				<li id="about-nav-link">
+            <span class="inactive-link">[</span>
+            <%= link_to "ABOUT AMY", '/about' %>
+            <span class="inactive-link">]</span>
+          </li>
   			</ul>
   		</nav>
   	</header>

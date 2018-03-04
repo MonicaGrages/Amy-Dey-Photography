@@ -28,8 +28,9 @@
     left: 0px;
     color: transparent;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
     background-repeat: none;
+    background-origin: content-box;
     opacity: 0;
     /*z-index: 0;*/
     animation: imageAnimation 36s linear infinite 0s;
@@ -56,15 +57,27 @@
 }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(https://scontent.fatl1-1.fna.fbcdn.net/v/t31.0-8/23467013_1795703953805454_3935495998034153506_o.jpg?oh=1bcfa631fe24cc568dd0eddb1fe2316b&oe=5A9B9FF7)
+    background-image: url(https://i.imgur.com/pT4JArY.jpg?1)
 }
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(https://scontent.fatl1-1.fna.fbcdn.net/v/t31.0-8/23456559_1795654223810427_4713685760894673775_o.jpg?oh=1f5fda29eddc34df619656dff1d59c3f&oe=5A624285);
+    background-image: url(https://i.imgur.com/Dx3Dz42.jpg?2);
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(https://scontent.fatl1-1.fna.fbcdn.net/v/t31.0-8/22291284_1755926621116521_6489905366636855611_o.jpg?oh=83cbd634a1e6958f6e201d49e972066c&oe=5A63FFF8);
+    background-image: url(https://i.imgur.com/vwclBnx.jpg?1);
     animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(https://i.imgur.com/Dx3Dz42.jpg?1);
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(https://i.imgur.com/Dx3Dz42.jpg?1);
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(https://i.imgur.com/Dx3Dz42.jpg?1);
+    animation-delay: 30s;
 }
 
 @keyframes imageAnimation {
