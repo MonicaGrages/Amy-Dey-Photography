@@ -1,27 +1,27 @@
 <div class="gallery-main">
 	<% @gallery_images.each_slice(15) do |photos|%>
     <div class='gallery-row'>
-      <div id='photo-<%= photos[0].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[0].imgur_url %>)"></div>
-      <div id='photo-<%= photos[1].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[1].imgur_url %>)"></div>
-      <div id='photo-<%= photos[1].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[2].imgur_url %>)"></div>
-      <div id='photo-<%= photos[3].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[3].imgur_url %>)"></div>
+      <div id='<%= photos[0].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[0].imgur_url %>)"></div>
+      <div id='<%= photos[1].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[1].imgur_url %>)"></div>
+      <div id='<%= photos[1].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[2].imgur_url %>)"></div>
+      <div id='<%= photos[3].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[3].imgur_url %>)"></div>
     </div>
     <div class='gallery-row'>
-      <div id='photo-<%= photos[4].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[4].imgur_url %>)"></div>
-      <div id='photo-<%= photos[5].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[5].imgur_url %>)"></div>
-      <div id='photo-<%= photos[6].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[7].imgur_url %>)"></div>
-      <div id='photo-<%= photos[7].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[6].imgur_url %>)"></div>
+      <div id='<%= photos[4].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[4].imgur_url %>)"></div>
+      <div id='<%= photos[5].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[5].imgur_url %>)"></div>
+      <div id='<%= photos[6].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[7].imgur_url %>)"></div>
+      <div id='<%= photos[7].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[6].imgur_url %>)"></div>
     </div>
     <div class='gallery-row'>
-      <div id='photo-<%= photos[8].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[8].imgur_url %>)"></div>
-      <div id='photo-<%= photos[9].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[9].imgur_url %>)"></div>
-      <div id='photo-<%= photos[10].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[10].imgur_url %>)"></div>
-      <div id='photo-<%= photos[11].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[11].imgur_url %>)"></div>
+      <div id='<%= photos[8].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[8].imgur_url %>)"></div>
+      <div id='<%= photos[9].id %>' class='portrait gallery-photo' style="background-image: url(<%= photos[9].imgur_url %>)"></div>
+      <div id='<%= photos[10].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[10].imgur_url %>)"></div>
+      <div id='<%= photos[11].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[11].imgur_url %>)"></div>
     </div>
     <div class='gallery-row'>
-      <div id='photo-<%= photos[12].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[12].imgur_url %>)"></div>
-      <div id='photo-<%= photos[13].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[13].imgur_url %>)"></div>
-      <div id='photo-<%= photos[14].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[14].imgur_url %>)"></div>
+      <div id='<%= photos[12].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[12].imgur_url %>)"></div>
+      <div id='<%= photos[13].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[13].imgur_url %>)"></div>
+      <div id='<%= photos[14].id %>' class='landscape gallery-photo' style="background-image: url(<%= photos[14].imgur_url %>)"></div>
     </div>
 	<% end %>
 </div>
