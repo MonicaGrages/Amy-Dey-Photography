@@ -10,7 +10,6 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    /*z-index: 0;*/
 }
 .cb-slideshow:after {
     content: '';
@@ -32,22 +31,8 @@
     background-repeat: none;
     background-origin: content-box;
     opacity: 0;
-    /*z-index: 0;*/
     animation: imageAnimation 36s linear infinite 0s;
 }
-
-/*.cb-slideshow li div {
-    z-index: 1000;
-    position: absolute;
-    bottom: 30px;
-    top: 200px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 36s linear infinite 0s;
-}*/
 
 .cb-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
