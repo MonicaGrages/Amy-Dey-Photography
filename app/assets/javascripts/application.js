@@ -82,7 +82,7 @@ $('document').ready(function(){
   function openModal() {
     var background = $(event.target).css('background-image');
     var image_url = background.replace('url(','').replace(')','').replace(/\"/gi, "");
-    modal.open({content: $(`<img src='${image_url}' class='modal-photo'></img>`)});
+    modal.open({content: $("<img src="+image_url+" class='modal-photo'></img>")});
   }
 
   $('.gallery-photo').click(event, openModal);
